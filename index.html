@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <meta name="description" content="A simple, clean online calculator for everyday math calculations.">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculator">
+        <header class="calc-header">
+            <h2>Calculator</h2>
+        </header>
+
+        <!-- Display Screen -->
+        <div class="display">
+            <div id="expression" class="expression"></div>
+            <div id="result" class="result">0</div>
+        </div>
+
+        <!-- Keypad Grid -->
+        <div class="keypad">
+            <button class="btn btn-action" data-action="clear-all">AC</button>
+            <button class="btn btn-action" data-action="clear-entry">CE</button>
+            <button class="btn btn-action" data-action="backspace">⌫</button>
+            <button class="btn btn-op" data-op="/">÷</button>
+
+            <button class="btn" data-num="7">7</button>
+            <button class="btn" data-num="8">8</button>
+            <button class="btn" data-num="9">9</button>
+            <button class="btn btn-op" data-op="*">×</button>
+
+            <button class="btn" data-num="4">4</button>
+            <button class="btn" data-num="5">5</button>
+            <button class="btn" data-num="6">6</button>
+            <button class="btn btn-op" data-op="-">−</button>
+
+            <button class="btn" data-num="1">1</button>
+            <button class="btn" data-num="2">2</button>
+            <button class="btn" data-num="3">3</button>
+            <button class="btn btn-op" data-op="+">+</button>
+
+            <button class="btn" data-action="toggle-sign">±</button>
+            <button class="btn" data-num="0">0</button>
+            <button class="btn" data-num=".">.</button>
+            <button class="btn btn-equals" data-action="equals">=</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
