@@ -20,7 +20,7 @@ jobs:
       - name: Check project files
         run: |
           test -f index.html
-          test -f style.css
+          test -f styles.css
           test -f script.js
           echo "All required frontend files exist"
 
